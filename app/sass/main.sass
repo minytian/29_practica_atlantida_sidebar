@@ -1,15 +1,12 @@
 @import "vars"
 @import "fonts"
-@import "libs"
-
-::placeholder
-	color: #666
-
-::selection
-	background-color: $accent
-	color: #fff
+//@import "libs"
+@import "atlantida/menu__top"
 
 body
+	margin: 0
+	width: 1600px
+	max-width: 100%
 	font-size: 16px
 	min-width: 320px
 	position: relative
@@ -17,13 +14,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
-	input, textarea
-		border: #666 1px solid
-		outline: none
-		&:focus:required:invalid
-			border-color: red
-		&:required:valid
-			border-color: green
+
 
 .img-responsive
 	display: block
@@ -38,6 +29,8 @@ body
 b, strong
 	font-weight: bold
 
+.section
 
 
-@import "media" // Always at the end
+
+// @import "media" // Always at the end
