@@ -1,11 +1,14 @@
 .sidebar
 	width: 100%
 	display: flex
-	flex-direction: flex-start
+	flex-direction: column
+	justify-content: flex-start
+
 	.search-form
 		position: relative
 		height: 40px
 		width: 300px
+		margin-bottom: 40px
 		&__block
 			box-sizing: border-box
 			width: 300px
@@ -27,6 +30,33 @@
 			&:hover
 				cursor: pointer
 
+	.last-posts
+		.box
+			height: 645px
+			.last-posts__title
+				margin-bottom: 40px
+				.h2-title
+			.last-posts__list
+				display: flex
+				flex-direction: row
+				height: 22%
+				.last-posts__img
+					display: inline-block
+					width: 115px
+					height: 110px
+				.last-posts__subtitle
+					margin-left: 20px
+					float: right
+					.h3-title
+					.last-posts__text
+						font-style: italic
+						line-height: 25px
+			.last-posts__line
+				border: 1px solid #b7b7b7
+				width: 100%
+				margin-bottom: 30px
+
+					
 
 
 
