@@ -1,17 +1,17 @@
 .sidebar
 	width: 100%
+	min-width: 270px
 	display: flex
 	flex-direction: column
 	justify-content: flex-start
-
 	.search-form
 		position: relative
 		height: 40px
-		width: 300px
+		width: 100%
 		margin-bottom: 40px
 		&__block
 			box-sizing: border-box
-			width: 300px
+			width: 100%
 			height: 39px
 			border: 2px solid #a8a8a8
 			color: $text
@@ -30,33 +30,37 @@
 			&:hover
 				cursor: pointer
 
-	.last-posts
-		.box
-			height: 645px
-			.last-posts__title
-				margin-bottom: 40px
-				.h2-title
-			.last-posts__list
-				display: flex
-				flex-direction: row
-				height: 22%
-				.last-posts__img
-					display: inline-block
+	.latest-posts
+		height: 700px
+		width: 100%
+		&__title
+			margin-bottom: 40px
+			.h2-title
+		&__list
+			display: flex
+			flex-direction: column
+			.latest-posts__item
+				.latest-posts__img
 					width: 115px
 					height: 110px
-				.last-posts__subtitle
-					margin-left: 20px
+					float: left
+				.latest-posts__subtitle
 					float: right
+					width: 53%
+					margin: 0 
 					.h3-title
-					.last-posts__text
-						font-style: italic
-						line-height: 25px
-			.last-posts__line
-				border: 1px solid #b7b7b7
-				width: 100%
-				margin-bottom: 30px
+				.latest-posts__text
+					float: right
+					font-style: italic
+					line-height: 21px
+					width: 53%
+					margin: 18px 0 35px
+		&__line
+			border: 1px solid #b7b7b7
+			width: 100%
+			margin-bottom: 30px
 
 					
-
+@media screen and (max-width:)
 
 
