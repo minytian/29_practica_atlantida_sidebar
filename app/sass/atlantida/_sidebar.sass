@@ -81,9 +81,55 @@
 						text-decoration: underline
 			.categories__line
 				width: 100%
-				margin: 16px 0
+				margin: 17px 0
 				border-top: 1px solid #b7b7b7
 					
+	.arhives
+		height: 335px
+		width: 100%
+		&__title
+			margin-bottom: 35px
+		&__list
+			display: flex
+			flex-direction: column
+			.arhives__item
+				&-img
+					margin-right: 10px
+				&-text
+					font-style: italic
+					font-size: 16px
+				&-text>a
+					color: $text
+					text-decoration: none
+					&:hover
+						text-decoration: underline
+			.arhives__line
+				width: 100%
+				margin: 17px 0
+				border-top: 1px solid #b7b7b7
+
+	.flickr-photos
+		height: 250px
+		width: 100%
+		min-width: 300px
+		&__title
+			margin-bottom: 35px
+		.flickr-photos__list
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			.flickr-photos__item
+				margin-bottom: 20px
+				position: relative
+				&:hover
+					cursor: pointer
+					transform: scale(1.05, 1.05)
+					transition: .5s ease
+			
+
+
+
 @media screen and (max-width:)
 
 
