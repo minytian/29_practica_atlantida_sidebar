@@ -1,5 +1,87 @@
 .main__news
-	width: 885px
 	display: flex
-	.main__news-blog
-		padding: 0 15px 0 50px 
+	flex-direction: column
+	box-sizing: border-box
+	overflow: hidden
+	.news-block
+		height: auto
+		width: 100%
+		max-width: 1100px
+		&__img
+			width: 100%
+			height: auto
+			display: block
+			margin-bottom: 38px
+		&__title
+			margin-bottom: 20px
+		&__title>h2
+			margin-bottom: 10px
+		&__date
+			font-style: italic
+		&__enumerator
+		&__line
+			width: 100%
+			border-top: 1px solid #b7b7b7
+			margin-bottom: 10px
+		&__comment
+			margin: 0 8px
+		&__count
+			font-style: italic
+		&__review
+			margin: 0 8px
+		&__eyes
+			font-style: italic
+		&__case
+			margin: 0 8px
+		&__branding
+			font-style: italic
+		&__content
+			letter-spacing: 1.5px
+			width: 100%
+			display: block
+		&__button
+			margin: 20px 0 45px
+		&__btn
+			width: 135px
+			height: 40px
+			border: 2px solid #3e3d3d
+			background-color: transparent
+			padding: 10px 25px
+			font-size: 13px
+			font-family: robotoBold, sans-serif
+			letter-spacing: 1px
+			display: block
+			transition: 0.3s ease
+			&:hover
+				cursor: pointer
+				box-shadow: 2px 2px 5px rgba(62, 61, 61, .5)
+			&:active
+				transform: translate(1px, 1px)
+	.main-news__line-bottom
+		border-bottom: 1px solid #3e3d3d
+		width: 100%
+		margin: 25px 0 0
+	.pagination
+		display: flex
+		flex-direction: row
+		justify-content: center
+		margin: 70px 0 100px
+		&__item
+			border: 1px solid #3e3d3d
+			display: block
+			width: 35px
+			height: 35px
+			margin-right: 5px
+			text-align: center
+			line-height: 35px
+			transition: 0.3s ease
+		&__item>span>a
+			text-decoration: none
+			color: $text
+			padding: 9px 14px
+			&:hover
+				text-decoration: underline
+		&__item:active
+				transform: translate(1px, 1px)
+
+			
