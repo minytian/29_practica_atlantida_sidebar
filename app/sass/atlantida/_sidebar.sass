@@ -1,135 +1,201 @@
-.sidebar
-	width: 100%
-	min-width: 270px
-	display: flex
-	flex-direction: column
-	justify-content: flex-start
-	.search-form
-		position: relative
-		height: 40px
+.wrapper__aside
+	width: 300px
+	.sidebar
 		width: 100%
-		margin-bottom: 40px
-		&__block
-			box-sizing: border-box
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		.search-form
+			position: relative
+			height: 40px
 			width: 100%
-			height: 39px
-			border: 2px solid #a8a8a8
-			color: $text
-			padding: 0 35px 0 16px 
-			font-family: $default-font
-			white-space: nowrap 
-			font-style: italic
-		&__img
-			position: absolute
-			padding: 10px 
-			width: 14px
-			height: 14px
-			right: 6px
-			top: 3px
-			z-index: 5
-			&:hover
-				cursor: pointer
-
-	.latest-posts
-		height: 700px
-		width: 100%
-		&__title
 			margin-bottom: 40px
-			.h2-title
-		&__list
-			display: flex
-			flex-direction: column
-			.latest-posts__item
-				.latest-posts__img
-					width: 115px
-					height: 110px
-					float: left
-				.latest-posts__subtitle
-					float: right
-					width: 53%
-					margin: 0 
-					.h3-title
-				.latest-posts__text
-					float: right
-					font-style: italic
-					line-height: 21px
-					width: 53%
-					margin: 18px 0 35px
-		&__line
-			border-top: 1px solid #b7b7b7
-			width: 100%
-			margin-bottom: 30px
-
-	.categories
-		height: 400px
-		width: 100%
-		&__title
-			margin-bottom: 35px
-		&__list
-			display: flex
-			flex-direction: column
-			.categories__item
-				&-img
-					margin-right: 10px
-				&-text
-					font-style: italic
-					font-size: 16px
-				&-text>a
-					color: $text
-					text-decoration: none
-					&:hover
-						text-decoration: underline
-			.categories__line
+			&__block
+				box-sizing: border-box
 				width: 100%
-				margin: 17px 0
-				border-top: 1px solid #b7b7b7
-					
-	.arhives
-		height: 335px
-		width: 100%
-		&__title
-			margin-bottom: 35px
-		&__list
-			display: flex
-			flex-direction: column
-			.arhives__item
-				&-img
-					margin-right: 10px
-				&-text
-					font-style: italic
-					font-size: 16px
-				&-text>a
-					color: $text
-					text-decoration: none
-					&:hover
-						text-decoration: underline
-			.arhives__line
-				width: 100%
-				margin: 17px 0
-				border-top: 1px solid #b7b7b7
-
-	.flickr-photos
-		height: 250px
-		width: 100%
-		min-width: 300px
-		&__title
-			margin-bottom: 35px
-		.flickr-photos__list
-			display: flex
-			flex-direction: row
-			flex-wrap: wrap
-			justify-content: space-between
-			.flickr-photos__item
-				margin-bottom: 20px
-				position: relative
+				height: 39px
+				border: 2px solid #a8a8a8
+				color: $text
+				padding: 0 35px 0 16px 
+				font-family: $default-font
+				white-space: nowrap 
+				font-style: italic
+			&__img
+				position: absolute
+				padding: 10px 
+				width: 14px
+				height: 14px
+				right: 6px
+				top: 3px
+				z-index: 5
 				&:hover
 					cursor: pointer
-					transform: scale(1.05, 1.05)
-					transition: .3s ease
-			
+
+		.latest-posts
+			height: 700px
+			width: 100%
+			&__title
+				margin-bottom: 40px
+				.h2-title
+			&__list
+				display: flex
+				flex-direction: column
+				.latest-posts__item
+					.latest-posts__img
+						width: 115px
+						height: 110px
+						float: left
+					.latest-posts__subtitle
+						float: right
+						width: 53%
+						margin: 0 
+						.h3-title
+					.latest-posts__text
+						float: right
+						font-style: italic
+						line-height: 21px
+						width: 53%
+						margin: 18px 0 35px
+			&__line
+				border-top: 1px solid #b7b7b7
+				width: 100%
+				margin-bottom: 30px
+
+		.categories
+			height: 400px
+			width: 100%
+			&__title
+				margin-bottom: 35px
+			&__list
+				display: flex
+				flex-direction: column
+				.categories__item
+					&-img
+						margin-right: 10px
+					&-text
+						font-style: italic
+						font-size: 16px
+					&-text>a
+						color: $text
+						text-decoration: none
+						&:hover
+							text-decoration: underline
+				.categories__line
+					width: 100%
+					margin: 17px 0
+					border-top: 1px solid #b7b7b7
+						
+		.arhives
+			height: 335px
+			width: 100%
+			&__title
+				margin-bottom: 35px
+			&__list
+				display: flex
+				flex-direction: column
+				.arhives__item
+					&-img
+						margin-right: 10px
+					&-text
+						font-style: italic
+						font-size: 16px
+					&-text>a
+						color: $text
+						text-decoration: none
+						&:hover
+							text-decoration: underline
+				.arhives__line
+					width: 100%
+					margin: 17px 0
+					border-top: 1px solid #b7b7b7
+
+		.flickr-photos
+			height: 250px
+			width: 100%
+			&__title
+				margin-bottom: 35px
+			.flickr-photos__list
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: space-between
+				.flickr-photos__item
+					margin-bottom: 20px
+					position: relative
+					&:hover
+						cursor: pointer
+						transform: scale(1.05, 1.05)
+						transition: .3s ease
+				
+
+@media screen and (max-width: 991px)
+	.wrapper__aside
+		width: 240px
+		.sidebar
+			.search-form
+				margin-bottom: 20px
+			.latest-posts
+				height: auto
+				&__title
+					//text-align: left
+					width: 70%
+					margin-bottom: 20px
+					.h2-title
+				&__list
+					.latest-posts__item
+						display: flex
+						flex-direction: column
+						align-items: flex-start
+						.latest-posts__img
+							width: 60%
+							height: 50%
+							margin-bottom: 20px
+						.latest-posts__subtitle
+							width: 85%
+							text-align: justify
+							.h3-title
+						.latest-posts__text
+							text-align: justify
+							width: 80%
+							margin-bottom: 20px
+				&__line
+					margin-bottom: 20px
+			.mt-60
+				margin-top: 20px
+			.categories
+				height: auto
+				width: 100%
+				&__title
+					margin-bottom: 20px
+				&__list
+					.categories__item
+						&-img
+						&-text
+						&-text>a
+					.categories__line
+						margin: 10px 0
+			.arhives
+				height: auto
+				width: 100%
+				&__title
+					margin-bottom: 20px
+				&__list
+					.arhives__item
+						&-img
+						&-text
+						&-text>a
+					.arhives__line
+						margin: 10px 0
+
+			.flickr-photos
+				height: auto
+				width: 100%
+				&__title
+				.flickr-photos__list
+					justify-content: flex-start
+					.flickr-photos__item
+						margin-right: 10px
+						margin-bottom: 10px
 
 
-
-@media screen and (max-width:)
-
-
+// @media screen and(max-width: 768px)
