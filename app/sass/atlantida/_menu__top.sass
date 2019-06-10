@@ -15,6 +15,7 @@
 			width: 160px
 			min-width: 160px
 			display: block
+			padding-left: 20px
 			&-img
 				float: left
 				margin-right: 15px
@@ -53,6 +54,7 @@
 		.section__social
 			display: flex
 			width: 80px
+			padding-right: 20px
 			&-img
 				margin-right: 5px
 				display: block
@@ -97,24 +99,24 @@
 				
 @media screen and (max-width: 991px)
 	.menu__top
+		height: auto
 		.container
-			height: 80px
+			height: auto
+			padding: 20px 0
 			.section__logo
 				margin-right: 20px
 			.section__menu
 				&-list
 					justify-content: flex-start
 			.section__social
-				flex-direction: column
 				margin-left: 20px
-				&-img
-					margin-bottom: 3px
 				&-border
 					display: none
 
 @media screen and (max-width: 575px)
 	.menu__top
 		.container
+			padding: 30px auto
 			.section__logo
 				min-width: 130px
 				display: flex
@@ -126,6 +128,8 @@
 					font-size: 13px
 					height: 30px
 					padding-top: 5px
+			.section__menu
+				padding: 0 20px
 		.caption
 			&__block
 				height: 300px
@@ -136,11 +140,16 @@
 					width: 50%
 				&-subtitle
 					font-size: 14px
-				
+		.section__social
+				margin-left: 20px
+				flex-direction: column
+				&-img
+					margin-bottom: 7px
+				&-border
+					display: none
 
 @media screen and (max-width: 430px)
 	.menu__top
-		height: 300px
 		.container
 			height: 130px
 			flex-direction: column
