@@ -16,13 +16,14 @@ var gulp          = require('gulp'),
 gulp.task('browser-sync', function() {
 	browserSync({
 		server: {
-			baseDir: 'app'
+			baseDir: 'app',
+			index: 'blog_masonry.html'
 		},
 		notify: false,
 		// open: false,
 		// online: false, // Work Offline Without Internet Connection
-		tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
-	})
+		// tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+	});
 });
 
 gulp.task('styles', function() {
@@ -79,7 +80,7 @@ if (gulpversion == 4) {
 	gulp.task('watch', function() {
 		gulp.watch('app/'+syntax+'/**/*.'+syntax+'', gulp.parallel('styles'));
 		gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
-		gulp.watch('app/*.html', gulp.parallel('code'))
+		gulp.watch('app/*.html', gulp.parallel('code'));
 	});
 	gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch'));
 }
